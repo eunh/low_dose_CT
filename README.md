@@ -6,7 +6,7 @@ Paper
 * Wavelet Domain Residual Network (WavResNet) for Low-Dose X-ray CT Reconstruction
   * Accepted at Fully3D 2017: [https://arxiv.org/abs/1703.01383]
 * Deep Convolutional Framelet Denoising for Low-Dose CT via Wavelet Residual Network
-  * in revision process
+  * published in IEEE Transactions on Medical Imaging (2018): [https://ieeexplore.ieee.org/abstract/document/8332971]
 
 Implementation
 ===============
