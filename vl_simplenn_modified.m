@@ -400,13 +400,6 @@ for i=1:n
                 res(i+1).x = vl_euclideanloss(res(i).x, l.class) ;
             end
             
-        case 'euclideansparseloss'
-            if testMode
-                res(i+1).x = res(i).x;
-            else
-                res(i+1).x = vl_euclideansparseloss(res(i).x, l.class,l.lambda) ;
-            end
-            
         otherwise
             error('Unknown layer type ''%s''.', l.type) ;
     end
@@ -541,9 +534,6 @@ if doder
                 
             case 'euclideanloss'
                 res(i).dzdx = vl_euclideanloss(res(i).x, l.class,res(i+1).dzdx) ;
-                
-            case 'euclideansparseloss'
-                res(i).dzdx = vl_euclideansparseloss(res(i).x, l.class,l.lambda, res(i+1).dzdx) ;
                 
                 
         end % layers
